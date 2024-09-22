@@ -1,0 +1,90 @@
+/* General container styling */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-open .dashboard-content {
+  margin-left: 240px; /* Adjust based on your sidebar width */
+}
+
+.dashboard-content {
+  padding: 20px;
+  width: 100%;
+  background-color: #f4f5f7;
+  transition: margin-left 0.3s ease;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+thead {
+  background-color: #0056d2;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody tr:hover {
+  background-color: #f4f4f4;
+}
+
+td button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+td button:hover {
+  background-color: #218838;
+}
+
+/* Loading and No Leads found messages */
+p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  td button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
